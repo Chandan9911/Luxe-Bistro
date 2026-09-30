@@ -1,0 +1,1198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luxe bistro | Fine Dinning Experience</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boot strap font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS library for scroll animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <!-- Navbar background change on scroll -->
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            }
+            else {
+                navbar.classList.remove('scrolled');
+            }
+            const backToTop = document.queryselector('.back-to-top-btn');
+            if (window.scrollY > 300) {
+                backToTop.classList.add('active');
+            }
+            else {
+                backToTop.classList.remove('active');
+            }
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="#">Luxe <span class="text-gold">Bistro</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservations">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallary">Gallary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="#reservations">Reserve a Table</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- hero section  -->
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center hero-content">
+
+                <div class="col-lg-6" data-aos="fade-right">
+
+                    <h1 class="hero-heading">Savar the Taste of Elegance</h1>
+
+                    <p class="lead mb-4">
+                        Experience find dining at its best with our
+                        cureted menu of exquisite dishes prepared by world-class chefs using the freshest ingredients.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#reservations" class="btn btn-primary">Reserve a Table</a>
+
+                        <a href="#menu" class="btn btn-outline-primary">Veiw Menu</a>
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-6 hero-image" data-aos="fade-left">
+                    <img src="image/hero-pizza.svg" alt="pizza" data-aos="zoom-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About section -->
+    <section id="about" class="about-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Our Story</h2>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h3 class="mb-4">Crafting Cullinary Excellence Since 2005</h3>
+                    <p class="mb-4">Founded by award-winning chef Elena Rodriguez, Luxe. Bistro
+                        brings together the finest ingredients from around the world to create
+                        an unforgetable dining experience.
+                    </p>
+
+                    <p class="mb-4">
+                        Our philosophy is simple: exceptional food, impeccable service,
+                        and an atmosphere that makes every meal a celebration
+                    </p>
+
+                    <div class="row mt-5">
+                        <div class="col-md-4 feature-item" data-aos="fade-up" data-aos-delay="0">
+                            <div class="text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <h5>Fresh Ingredients</h5>
+                                <p>Locally sourced, seasonal produced</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 feature-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <h5>Premium Dining</h5>
+                                <p>Exquisite dishes prepared with care</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 feature-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <h5>World class chefs</h5>
+                                <p>Telenet culinary experts</p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="chef-image">
+                        <img src="image/chef.png" alt="" class="img-fluid" data-aos="zoom-in">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- menu section -->
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>Our Menu</h2>
+                        <p class="lead">Discover our tasty selection of dishes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <ul class="nav nav-pills mb-3 justify-content-center" id="menutab" role="tablist" data-aos="fade-up">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-starter-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-starter" type="button" role="tab" aria-controls="pills-starter"
+                            aria-selected="true">Starter</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Main-tab" data-bs-toggle="pill" data-bs-target="#pills-Main"
+                            type="button" role="tab" aria-controls="pills-Main" aria-selected="false">Main
+                            Course</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Desserts-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Desserts" type="button" role="tab" aria-controls="pills-Desserts"
+                            aria-selected="false">Desserts</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Drinks-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Drinks" type="button" role="tab" aria-controls="pills-Drinks"
+                            aria-selected="false">Drinks</button>
+                    </li>
+
+
+                </ul>
+                <div class="tab-content" id="menuTabContant">
+                    <!-- starter -->
+                    <div class="tab-pane fade show active" id="pills-starter" role="tabpanel"
+                        aria-labelledby="pills-starter-tab" tabindex="0">
+                        <!-- row -1 -->
+                        <div class="row" data-aos="fade-up">
+
+                            <!-- part-1 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/wings.png" alt="wings">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Chicken Wings(BBQ)</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+                                        <p>Juicy wings grilled to perfection, coated in smoky BBQ sauce, and served hot
+                                            for the perfect start to your meal.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- part-2 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/clamari.png" alt="wings">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Calamari Rings </h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+                                        <p>Crispy golden calamari, lightly seasoned and paired with a tangy dipping
+                                            sauce — a classic seafood appetizer.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- part-3 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/sticks.png" alt="wings">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Cheese Sticks </h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+                                        <p>Crunchy on the outside, gooey on the inside. Melted mozzarella sticks served
+                                            with marinara dip.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- part-4 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/soup.png" alt="wings">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Soup of the Day</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+                                        <p>A warm, comforting bowl of freshly prepared soup, crafted daily with seasonal
+                                            ingredients.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- part-5-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/salad.png" alt="wings">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Garden Fresh Salad </h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+                                        <p>A refreshing mix of crisp greens, cherry tomatoes, cucumbers, and a light
+                                            vinaigrette dressing.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- part-6 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/potatoes.png" alt="wings">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Potato Wedges</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+                                        <p>Golden, seasoned wedges with a crispy bite and fluffy inside — perfect for
+                                            sharing.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Main cource -->
+                    <div class="tab-pane fade" id="pills-Main" role="tabpanel" aria-labelledby="pills-Main-tab"
+                        tabindex="0">
+
+                        <div class="row" data-aos="fade-up">
+                            <!--part-1-->
+                            <div class="col-md-6 col-lg-4 mb-4">
+
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/burger.png" alt="burger">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Classic Burger</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+                                        <p>A hearty beef patty layered with cheese, lettuce, tomato, and our signature
+                                            sauce, served in a soft bun.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- part-2 -->
+
+                            <div class="col-md-6 col-lg-4 mb-4">
+
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/pasta.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Pasta Alfredo</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+                                        <p>Creamy pasta tossed in a rich Alfredo sauce, garnished with herbs and
+                                            Parmesan.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- part-3 -->
+
+                            <div class="col-md-6 col-lg-4 mb-4">
+
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/pizza 2.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Stone-Baked Pizza</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+                                        <p>Thin crust pizza topped with fresh mozzarella, basil, and your choice of
+                                            toppings, baked to perfection.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- part-4 -->
+
+                            <div class="col-md-6 col-lg-4 mb-4">
+
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/salmon.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Grilled Salmon </h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+
+                                        <p>Tender salmon fillet grilled with herbs, served with seasonal vegetables and
+                                            lemon butter sauce.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- part -5 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/pasta.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Grilled Chicken Pasta</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- part -6 -->
+
+                            <div class="col-md-6 col-lg-4 mb-4">
+
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/pasta.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Grilled Chicken Pasta</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- Desserts -->
+                    <div class="tab-pane fade" id="pills-Desserts" role="tabpanel" aria-labelledby="pills-Desserts-tab"
+                        tabindex="0">
+                        <div class="row" data-aos="fade-up">
+                            <!-- part-1 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/cake.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Chocolate Cake</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+
+                                        <p>Moist chocolate sponge layered with rich ganache — a timeless indulgence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- part-2 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/cake2.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Fruit Cake Selection </h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+
+                                        <p>Delightful variations of fruit‑filled cakes, each bursting with fresh
+                                            flavors.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- part-3 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/cake3.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Red Velvet Cake</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+
+                                        <p>A soft, velvety sponge with a hint of cocoa, layered with smooth cream cheese
+                                            frosting — elegant and irresistible.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- part -4 -->
+
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/cake4.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Black Forest Cake</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+                                        <p>Layers of chocolate sponge, whipped cream, and cherries, topped with
+                                            chocolate shavings — a classic European delight.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--part -5  -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/icecream.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Ice Cream Sundae </h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+
+                                        <p>Scoops of creamy ice cream topped with nuts, syrup, and whipped cream.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- part -6 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/fruit.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Fresh Fruit Platter </h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+
+                                        <p>A colorful assortment of seasonal fruits, served chilled for a refreshing
+                                            finish.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- Drinks -->
+                    <div class="tab-pane fade" id="pills-Drinks" role="tabpanel" aria-labelledby="pills-Drinks-tab"
+                        tabindex="0">
+                        <div class="row" data-aos="fade-up">
+
+                            <!-- part-1 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/drink.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Colorful Soft Beverages </h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+
+                                        <p>A vibrant selection of chilled drinks served over ice — from fruity blends to
+                                            classic cola. Each glass bursts with flavor and freshness, making it the
+                                            perfect companion to any meal.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- part-2 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/juice.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Fresh Orange juice</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+
+                                        <p>Bright, refreshing orange juice served chilled in a dome-lid cup with straw.
+                                            Made from ripe, hand-picked oranges, it's bursting with natural sweetness
+                                            and vitamin C — the perfect energizing drink for any time of day.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- part-3 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/coffee.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Indulgent Shakes</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+
+                                        <p>A rich, creamy chocolate shake topped with whipped cream, drizzled with
+                                            decadent syrup, and finished with crunchy cookie pieces. Served chilled with
+                                            a striped straw, it's the ultimate indulgent treat for dessert lovers.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- part -4 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/coffee2.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Classic Cappuccino</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+
+                                        <p>A rich espresso topped with velvety milk foam and a dusting of cocoa or
+                                            cinnamon. Served with aromatic spices and roasted coffee beans, this warm
+                                            cup is the perfect balance of bold flavor and creamy indulgence.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- part -5 -->
+                            <div class="col-md-6 col-lg-4 mb-4">
+
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/juice2.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Refreshing Citrus Drinks</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+
+                                        <p>A bright, zesty blend of lemon and citrus served over ice, garnished with
+                                            fresh mint leaves and a slice of orange. Crisp, tangy, and revitalizing —
+                                            the perfect summer refreshment to beat the heat.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- part -6 -->
+
+                            <div class="col-md-6 col-lg-4 mb-4">
+
+                                <div class="menu-item">
+                                    <div class="menu-item-img" data-aos="zoom-in">
+                                        <img src="image/menu/water.png" alt="pasta">
+                                    </div>
+
+                                    <div class="menu-item-content">
+                                        <div class="menu-item-title">
+                                            <h5>Mineral Water</h5>
+                                            <span class="menu-item-price">$18</span>
+                                        </div>
+
+                                        <p>Crystal‑clear water served chilled with ice, offering unmatched purity and
+                                            freshness. A simple yet essential choice to keep you hydrated and complement
+                                            any meal.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation section -->
+    <section id="reservations" class="reservation-section">
+
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Make a Reservation</h2>
+                    <p class="lead text-white">Secure your table for an unforgettable experience</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="reservation-card" data-aos="fade-up">
+
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Your Phone">
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control" placeholder="Number of Guests" min="1">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="date" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="time" class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="4"
+                                        placeholder="Your special requests"></textarea>
+                                </div>
+
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Reserve Now
+                                    </button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallary section -->
+
+    <section id="gallary" class="gallary-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Our Menu</h2>
+                    <p class="lead">A glimps of the Luxe Bistro experience</p>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallary-item" data-aos="zoom-in" data-aos-delay="0">
+                        <img src="image/gallery/signature.png" alt="signature dish">
+
+                        <div class="gallery-item-overlay">
+                            <h5 class="text-white">Signature Dish</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallary-item" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="image/gallery/interior.png" alt="signature dish">
+
+                        <div class="gallery-item-overlay">
+                            <h5 class="text-white">Restaurant Interior</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallary-item" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="image/gallery/pizza.png" alt="signature dish">
+
+                        <div class="gallery-item-overlay">
+                            <h5 class="text-white">Gourment Pizza</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallary-item" data-aos="zoom-in" data-aos-delay="0">
+                        <img src="image/gallery/bbq.png" alt="signature dish">
+
+                        <div class="gallery-item-overlay">
+                            <h5 class="text-white">Grill & BBQ</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallary-item" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="image/gallery/burger.png" alt="signature dish">
+
+                        <div class="gallery-item-overlay">
+                            <h5 class="text-white">Beef Burger</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallary-item" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="image/gallery/dessert.png" alt="signature dish">
+
+                        <div class="gallery-item-overlay">
+                            <h5 class="text-white">Dessert Selection</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- testimonials section -->
+
+    <section id="testimonials" class="testimonial-section position-relative">
+
+        <div class="floating-icons">
+            <i class="fas fa-utensils floating-icon" style="left: 10%; animation-delay: 2s;"></i>
+            <i class="fas fa-wine-glass floating-icon" style="left:20%; animation-delay: 4s"></i>
+            <i class="fas fa-heart floating-icon" style="left: 80%;
+            animation-delay: 4s"></i>
+            <i class="fas fa-star floating-icon" style="left: 90%; 
+            animation-delay: 2s"></i>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+
+                    <h2 class="section-title" data-aos="fade-up">What our Guests say</h2>
+                    <p class="lead">Experience from our valued customers</p>
+                </div>
+            </div>
+
+            <div class="carousel slide" id="testimonialCarousel">
+                <div class="carousel-inner pb-4">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="testimonial-card shadow">
+                                        <img src="image/client1.png" alt="client1" class="profile-img">
+                                        <h5 class="mb-2">John Doe</h5>
+
+                                        <div class="stars mb-3">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+
+                                        <p><em>"A perfect blend of traditional flavors and modern
+                                                presentation. The atmosphere is luxurious and inviting. We'll
+                                                definitely be back soon."
+                                            </em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item  ">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="testimonial-card shadow">
+                                        <img src="image/client2.png" alt="client1" class="profile-img">
+                                        <h5 class="mb-2">Stefan jock</h5>
+
+                                        <div class="stars mb-3">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+
+                                        <p><em>"Customer service and satisfaction are excellent. The staff made us feel
+                                                truly welcome."
+                                            </em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item  ">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="testimonial-card shadow">
+                                        <img src="image/client3.png" alt="client1" class="profile-img">
+                                        <h5 class="mb-2">Christen Mano</h5>
+
+                                        <div class="stars mb-3">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+
+                                        <p><em>"The food was delicious, and the atmosphere was warm and inviting. I’ll
+                                                definitely come back!"
+                                            </em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <button type="button" class="carousel-control-prev" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <!-- next button -->
+                <button type="button" class="carousel-control-next" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="lead"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb5" data-aos="fade-right">
+
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3436.885485893783!2d73.72062345075685!3d18.593918699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1790533493339!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="ps-lg-5">
+                        <h3 class="mb-4">Get In Touch</h3>
+                        <!-- address -->
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+
+                            <div>
+                                <h5>Address</h5>
+                                <p>123 Luxury Lane, New York , 10012</p>
+                            </div>
+                        </div>
+
+                        <!-- phone -->
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+91-9983789324</p>
+                            </div>
+                        </div>
+
+                        <!-- email -->
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+
+                            <div>
+                                <h5>Email</h5>
+                                <p>chandanpodar99@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- clock -->
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+
+                            <div>
+                                <h5>Hours</h5>
+                                <p>Monday-Saturday-11:00 AM -11:00 PM</p>
+                                <p>Sunday 11:00 AM -05:00 PM</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer-section -->
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+
+                    <h2 class="text-white mb-4">Luxe <span class="text-gold">Bistro</span></h2>
+
+                    <p>Experience the art of fin dining with our equisite cusine, impeccable service, and elegant
+                        atmosphere</p>
+
+                    <div class="social-icons mb-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
+                    <h5>Quicks links</h5>
+                    <ul class="footer-links">
+                        <li> <a href="#home">Home</a></li>
+                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#menu">Menu</a></li>
+                        <li> <a href="#reservation">Reservation</a></li>
+                        <li> <a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+
+                    <h5 class="text-white mb-4">Opening Hours</h5>
+                    <ul class="footer-links">
+                        <li>Monday - Saturday : 11:00 AM - 11:00 PM</li>
+                        <li>Sunday : 11:00 AM - 05:00 PM</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and special offers</p>
+
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email">
+                        <button class="newsletter-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="mb-0">&copy; 2025 Luxe Bistro. All rights reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+
+    <a href="#home" class="back-to-top-btn"> <i class="fas fa-arrow-up"></i></a>
+
+ 
+
+    <script>
+        document.body.dataset.aosEasing = 'ease-out';
+        document.body.dataset.aosDuration = '800';
+
+        const animatedElements = document.querySelectorAll('[data-aos]');
+        animatedElements.forEach(function (element) {
+            element.classList.add('aos-init');
+        });
+
+        if ('IntersectionObserver' in window) {
+            const animationObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    entry.target.classList.toggle('aos-animate', entry.isIntersecting);
+                });
+            }, {
+                rootMargin: '0px 0px -80px 0px',
+                threshold: 0.15
+            });
+
+            animatedElements.forEach(function (element) {
+                animationObserver.observe(element);
+            });
+        } else {
+            animatedElements.forEach(function (element) {
+                element.classList.add('aos-animate');
+            });
+        }
+    </script>
+</body>
+
+</html>
